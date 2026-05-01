@@ -53,7 +53,7 @@ Public Sub AlerteStockFaible()
     Next i
     
     If msg <> "" Then
-        MsgBox "⚠ Stock faible :" & vbCrLf & msg, vbExclamation
+        MsgBox " Stock faible :" & vbCrLf & msg, vbExclamation
     Else
         MsgBox "Stock OK", vbInformation
     End If
@@ -69,11 +69,6 @@ End Sub
 ' =========================
 ' ===== USERFORM CODE =====
 ' =========================
-' ⚠ À coller dans le UserForm nommé frmStock
-' Champs à créer :
-' txtID, txtNom, txtQte, txtPrix, txtSeuil
-' Boutons :
-' btnAjouter, btnModifier, btnSupprimer
 
 Private Sub btnAjouter_Click()
     Dim ws As Worksheet
